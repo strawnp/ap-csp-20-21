@@ -12,6 +12,8 @@ int main(void)
     // malloc() == "memory allocation" (found in stdlib.h)
     // used for dynamic memory allocation, i.e. when we learn at run time,
     // rather than compile time, how large an array will be
+    // malloc() expects as an argument the number of bytes to reserve
+    // sizeof() returns numbers of bytes used for that data type
     int* grades = malloc(sizeof(int) * numGrades);
 
     float sum = 0;
@@ -27,6 +29,7 @@ int main(void)
     printf("\nAverage grade: %.2f\n", sum / numGrades);
 
     // free memory
+    // a call to free() should always end a program that uses malloc()
     free(grades);
 
     return 0;
