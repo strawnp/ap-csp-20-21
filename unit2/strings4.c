@@ -1,10 +1,10 @@
 #include <cs50.h>
 #include <stdio.h>
-#include <string.h>
 
 int main(void)
 {
-    string s = get_string("Enter a word or phrase or sentence: ");
+    // TODO: implement strlen()
+    string s = get_string("Enter a word: ");
 
     int string_length = 0;
 
@@ -17,4 +17,6 @@ int main(void)
     }
 
     printf("Length of s: %d\n", string_length);
+
+    return 0;
 }

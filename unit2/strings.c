@@ -3,9 +3,11 @@
 
 int main(void)
 {
+    // a char array != a string
     char letters[] = { 'A', 'B', 'C' };
     printf("%s\n", letters);
 
+    // a string == a char array that ends with '\0' (null terminator)
     char more_letters[] = "ABC";
     // char more_letters[] = { 'A', 'B', 'C', '\0' };
     printf("%s\n", more_letters);
