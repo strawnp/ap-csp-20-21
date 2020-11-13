@@ -6,7 +6,7 @@ int main(int argc, string argv[])
 {
     if (argc != 3)
     {
-        printf("Usage: ./hello_name <first name> <age>\n");
+        printf("Usage: ./hello_name_age <first name> <age>\n");
         return 1;
     }
 
@@ -14,7 +14,7 @@ int main(int argc, string argv[])
 
     if (age < 0)
     {
-        printf("Usage: age must be non-negative integer.\n");
+        printf("Usage: age must be a non-negative integer.\n");
         return 2;
     }
 
