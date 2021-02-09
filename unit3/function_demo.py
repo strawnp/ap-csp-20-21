@@ -1,5 +1,4 @@
 import cs50
-import random
 
 def add_two_numbers(x, y):
     return x + y
